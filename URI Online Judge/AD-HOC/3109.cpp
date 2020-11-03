@@ -5,7 +5,6 @@ using namespace std;
 #define MN 1005
 
 int f[MN];
-
 int R(int v, int m) {
 	if (f[v] == m) return 0;
 	return R(f[v], m) + 1;
@@ -16,7 +15,7 @@ int main() {
     cin.tie(0);
     int n, q, t, a, b;
 	cin >> n;
-	for (int i = 1; i <= n; i++) {
+    for (int i = 1; i <= n; i++) {
 		f[i] = i;
 	}
 	cin >> q;
