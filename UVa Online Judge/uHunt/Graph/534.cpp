@@ -80,7 +80,7 @@ int main() {
     while (cin >> n && n) {
         stonel.clear();
         edgel.clear();
-        rta[0] = -99999999.9;
+        rta[0] = 0;
         for (int i = 0; i < n; i++) {
             lad[i].clear();
             vis[i] = 0;
