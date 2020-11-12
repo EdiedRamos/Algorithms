@@ -11,5 +11,5 @@ int main() {
 	} else {
 		cout << "El numero es par\n";
 	}
-	return 0;
+	return 0;//fin
 }
