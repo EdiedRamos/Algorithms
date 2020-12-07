@@ -5,7 +5,7 @@ using namespace std;
 typedef vector<string> vs;
 
 struct Info {
-    string departament, first_name, last_name, home_address, title, homephone, workphone, campusbox;
+    string department, first_name, last_name, home_address, title, homephone, workphone, campusbox;
 };
 
 vs split(string s) {
@@ -38,7 +38,7 @@ int main() {
     Info tmp;
     while (tc--) {
         getline(cin, s);
-        tmp.departament = s;
+        tmp.department = s;
         while (getline(cin, s) && !s.empty()) {
             vs prt = split(s);
             tmp.title = prt[0];
@@ -55,7 +55,7 @@ int main() {
     for (auto i : data) {
         cout << "----------------------------------------\n";
         cout << i.title << " " << i.first_name << " " << i.last_name << "\n" << i.home_address << "\n";
-        cout << "Department: " << i.departament << "\nHome Phone: " << i.homephone << "\n";
+        cout << "Department: " << i.department << "\nHome Phone: " << i.homephone << "\n";
         cout << "Work Phone: " << i.workphone << "\nCampus Box: " << i.campusbox << "\n";
     }
     return 0;
