@@ -20,11 +20,6 @@ int main() {
   }
   while (cin >> c) {
     if (c == '#') {
-      if (s == "0") {
-        cout << "YES\n";
-        s = "";
-        continue;
-      }
       z = 0;
       pot = s.size() - 1;
       for (int i = 0; i < s.size(); i++) {
