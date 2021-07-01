@@ -1,5 +1,5 @@
 # coder: Yeshayah
-# This problem is about catalan's numbers and about factorials
+# This problem is about catalan numbers and about factorials
 
 cat = []
 fact = []
