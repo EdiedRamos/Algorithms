@@ -14,9 +14,11 @@ int main() {
   int n;
   cat[0] = 1;
   scat[1] = scat[2] = 1;
+  // catalan numbers
   for (int i = 1; i < MN; i++) {
     cat[i] = ((2 * i * (2 * i - 1)) * cat[i - 1]) / ((i + 1) * i);
   }
+  // super catalan
   for (int i = 3; i < MN; i++) {
     scat[i] = (3 * (2 * i - 3) * scat[i - 1] - (i - 3) * scat[i - 2]) / i;
   }
