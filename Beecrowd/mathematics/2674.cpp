@@ -10,7 +10,7 @@
 
   # Output
   For each test case, the entry number classification is expected in a single line, which can be: "Super", if the number is a Super Prime; "Primo" if the number by a prime number only; Or "Nada" if the number has divisors beyond 1 and itself.
- */
+*/
 
 #include <bits/stdc++.h>
 using namespace std;
