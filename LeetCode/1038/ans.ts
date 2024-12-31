@@ -16,7 +16,6 @@ type NodeType = TreeNode | null;
 
 function dfs(root: NodeType, sum: number): number {
   if (!root) return sum;
-  const tVal = root.val;
   const rightSum = dfs(root.right, sum);
   root.val += rightSum;
   return dfs(root.left, root.val);
