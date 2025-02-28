@@ -15,7 +15,7 @@ function groupThePeople(groupSizes: number[]): number[][] {
     }
   }
   const answer: number[][] = [];
-  for (const [_, value] of Object.entries(collection)) {
+  for (const value of Object.values(collection)) {
     answer.push(...value);
   }
   return answer;
