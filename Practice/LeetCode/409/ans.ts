@@ -13,7 +13,7 @@ function longestPalindrome(s: string): number {
       oddFlag = true;
       continue;
     }
-    if (value % 2 === 1 && value - 1 > 0) ans += value - 1;
+    if (value & 1 && value - 1 > 0) ans += value - 1;
     if (!(value & 1)) ans += value;
   }
   return ans;
