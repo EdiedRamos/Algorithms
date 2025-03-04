@@ -13,6 +13,6 @@ function generate(numRows: number): number[][] {
 }
 
 function getRow(rowIndex: number): number[] {
-	const triangle = generate(rowIndex + 1);
-	return triangle[rowIndex];
-};
+  const triangle = generate(rowIndex + 1);
+  return triangle[rowIndex];
+}
