@@ -6,10 +6,9 @@ function subarraySum(nums: number[]): number {
   for (let i = 0; i < nums.length; i++) {
     prefixSum.push(nums[i] + prefixSum[i]);
   }
-  console.log({ prefixSum });
-  // for (let i = 0; i < nums.length; i++) {
-  //   const start = Math.max(0, i - nums[i]);
-  //   ans += prefixSum[i + 1] - prefixSum[start];
-  // }
+  for (let i = 0; i < nums.length; i++) {
+    const start = Math.max(0, i - nums[i]);
+    ans += prefixSum[i + 1] - prefixSum[start];
+  }
   return ans;
 }
