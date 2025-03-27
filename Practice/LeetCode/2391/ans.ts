@@ -29,6 +29,5 @@ function garbageCollection(garbage: string[], travel: number[]): number {
   const glassTime = evaluateType(garbage, travel, "G");
   const paperTime = evaluateType(garbage, travel, "P");
   const metalTime = evaluateType(garbage, travel, "M");
-  console.log({ glassTime, paperTime, metalTime });
   return glassTime + paperTime + metalTime;
 }
