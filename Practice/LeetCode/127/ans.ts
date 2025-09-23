@@ -23,8 +23,7 @@ function ladderLength(
     for (const option of [...remaining]) {
       if (!hasConection(current!, option)) continue
       if (option === endWord) {
-        distance[option] = Math.min(distance[option], distance[current!] + 1)
-        continue
+        return Math.min(distance[option], distance[current!] + 1)
       }
       if (!used[option]) {
         remaining.delete(option)
