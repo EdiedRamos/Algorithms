@@ -14,4 +14,22 @@
  * }
  */
 
-function averageOfLevels(root: TreeNode | null): number[] {}
+function averageOfLevels(root: TreeNode | null): number[] {
+  const values: Record<number, number[]> = {}
+
+  const dfs = (node: TreeNode | null, level: number): void => {
+    if (!node) return
+
+    if (!values[level]) values[level] = []
+    values[level].push(node.val)
+
+    dfs(node.left, level + 1)
+    dfs(node.right, level + 1)
+  }
+
+  dfs(root, 0)
+
+  return Object.values(values).map(
+    (values) => values.reduce((a, b) => a + b, 0) / values.length
+  )
+}
