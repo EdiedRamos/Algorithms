@@ -4,6 +4,7 @@ function numSub(s: string): number {
   const MOD = 1e9 + 7
   let ans = 0,
     co = 0
+  s += '0'
   for (const c of s) {
     if (c === '1') co++
     else {
@@ -11,6 +12,5 @@ function numSub(s: string): number {
       co = 0
     }
   }
-  ans = (ans + (co * (co + 1)) / 2) % MOD
   return ans
 }
