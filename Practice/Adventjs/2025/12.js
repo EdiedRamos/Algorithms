@@ -4,7 +4,6 @@
  * @return {number} - The result of the battle
  */
 function elfBattle(elf1, elf2) {
-  // Code here
   let elf1Hp = 3, elf2Hp = 3
   const relationDamage = {
     AA: [1, 1],
