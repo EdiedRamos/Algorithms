@@ -6,7 +6,7 @@ function fourSumCount(
   nums3: number[],
   nums4: number[],
 ): number {
-  let triples = 0;
+  let tuples = 0;
   const n = nums1.length;
   const sumFre: Record<number, number> = {};
   for (let i = 0; i < n; i++) {
@@ -18,8 +18,8 @@ function fourSumCount(
   for (let i = 0; i < n; i++) {
     for (let j = 0; j < n; j++) {
       const sum = nums3[i] + nums4[j];
-      triples += sumFre[-sum] ?? 0;
+      tuples += sumFre[-sum] ?? 0;
     }
   }
-  return triples;
+  return tuples;
 }
